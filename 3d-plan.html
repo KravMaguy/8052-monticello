@@ -9,13 +9,32 @@
 		<meta name="keywords" content="mall map, 3d, css, javascript, pin, levels, floor map" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
+		<style>
+		.no-js { display: none;  }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/6.gif) center no-repeat #fff;
+}
+		</style>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style2.css" />
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 		<script>
+		$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+		});
+	
 			function logoError(image) {
 					image.onerror = "";
 					image.src = "logo-placeholder.png";
@@ -37,6 +56,7 @@
 		
 	</head>
 	<body>
+	<div class="se-pre-con"></div>
 	<!-- splash html -->
 			<div class="container-splash">
 					<div class="sp-container">
