@@ -19,7 +19,7 @@ h1.main,p.demos {
 	background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 }
 .sp-content {
- background: url(../images/red_texture1.jpg);
+ background: url(../images/red_texture3.jpg);
  height: 100%; 
 
  /* Center and scale the image nicely */
@@ -31,6 +31,12 @@ h1.main,p.demos {
 	left: 0px;
 	top: 0px;
 	z-index: 1000;
+}
+@media (max-width:480px)  { 
+	/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+	.sp-content {
+		background: url(../images/greycompressed.jpg);
+	}
 }
 .sp-container h2 {
 	position: absolute;
