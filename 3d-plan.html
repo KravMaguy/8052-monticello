@@ -21,21 +21,23 @@
 	background: url(images/loader-64x/6.gif) center no-repeat #fff;
 }
 		</style>
-	
+
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/style2.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 		<script>
 		$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow", function() {
+        $(".container-splash").addClass("loaded");
+      });
 		});
-	
+
 			function logoError(image) {
 					image.onerror = "";
 					image.src = "logo-placeholder.png";
@@ -54,7 +56,7 @@
 
 
 		<script src="js/modernizr-custom.js"></script>
-		
+
 	</head>
 	<body>
 	<div class="se-pre-con"></div>
@@ -123,7 +125,7 @@
 						<img class="surroundings__map" src="img/surroundings.svg" alt="Surroundings"/>
 					</div>
 					<!-- enterance pic -->
-			
+
 					<div class="content__profile-photo enterance_photo">
 						<img onerror="profileError(this);" src="enterance.jpg" width="100%" alt="Profile Picture" />
 					</div>
