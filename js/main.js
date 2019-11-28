@@ -75,6 +75,8 @@
 		levelDownCtrl = mallNav.querySelector('.mallnav__button--down'),
 		// pins
 		pins = [].slice.call(mallLevelsEl.querySelectorAll('.pin')),
+	
+		descriptionIcons = [].slice.call(mallLevelsEl.querySelectorAll('.description-icon')),
 		// content element
 		contentEl = document.querySelector('.content'),
 		// content close ctrl
@@ -149,6 +151,24 @@
 					spacesList.sort('category');
 				}
 			});
+
+
+			descriptionIcons.forEach(function(icon){	
+				// iconShape.addEventListener('click', function(ev) {	
+				// 	ev.preventDefault();	
+				// 	// open content for this pin	
+				// 	openContent(pin.getAttribute('data-space'));	
+				// 	// remove hover class (showing the title)	
+				// 	//classie.remove(contentItem, 'content__item--hover');	
+				// });	
+					
+				icon.addEventListener('click', function(ev){	
+					ev.preventDefault();	
+					// open content for this pin	
+					openContent(icon.getAttribute('data-space'));	
+					console.log(icon)	
+				})	
+			})
 
 			// hovering a pin / clicking a pin
 			pins.forEach(function(pin) {

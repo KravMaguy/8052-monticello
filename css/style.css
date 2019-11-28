@@ -167,8 +167,8 @@ button:focus {
 
 .surroundings,
 .levels {
-	-webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
-	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
+	-webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
+	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
 }
 
 .level {
@@ -769,8 +769,8 @@ button:focus {
 /* Pins */
 .level__pins {
 	position: absolute;
-	top: -2vmin;
-	left: 1vmin;
+	top: -6vmin;
+	left: 2vmin;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
@@ -943,7 +943,7 @@ button:focus {
 .pin--2-10 { top: 28.5vmin; left: 90vmin; }
 .pin--2-11 { top: 28.5vmin; left: 80vmin; }
 .pin--2-12 { top: 28.5vmin; left: 71.5vmin; }
-.pin--2-13 { top: 67vmin; left: 51vmin; }
+.pin--2-13 { top: 66vmin; left: 51vmin; }
 
 .mall--content-open .pin--2-1 { top: 28vmin; left: 68.5vmin; }
 .mall--content-open .pin--2-2 { top: 27vmin; left: 49.5vmin; }
@@ -957,7 +957,7 @@ button:focus {
 .mall--content-open .pin--2-10 { top: 31vmin; left: 104vmin; }
 .mall--content-open .pin--2-11 { top: 31vmin; left: 93vmin; }
 .mall--content-open .pin--2-12 { top: 31vmin; left: 83.5vmin; }
-.mall--content-open .pin--2-13 { top: 72.5vmin; left: 59vmin; }
+.mall--content-open .pin--2-13 { top: 71.5vmin; left: 59vmin; }
 
 /* Mobile compatability */
 .open-search,
@@ -1014,12 +1014,12 @@ button:focus {
 	}
 
 	.boxbutton {
-    font-size: 1.5em;
+     font-size: 1.5em; 
   }
 
 	.mall--content-open .level__pins {
-    top: -1vmin;
-    left: 6vmin;
+    top: -6vmin;
+    left: 8vmin;
 	}
 
 	.pin--1-1 { top: 28vmin; left: 87.5vmin; }
@@ -1052,7 +1052,7 @@ button:focus {
 	.pin--2-10 { top: 28.5vmin; left: 90vmin; }
 	.pin--2-11 { top: 28.5vmin; left: 80vmin; }
 	.pin--2-12 { top: 28.5vmin; left: 71.5vmin; }
-	.pin--2-13 { top: 66.5vmin; left: 51vmin; }
+	.pin--2-13 { top: 65.5vmin; left: 51vmin; }
 
 	.mall--content-open .pin--2-1 { top: 26vmin; left: 63vmin; }
 	.mall--content-open .pin--2-2 { top: 26vmin; left: 44.5vmin; }
@@ -1066,7 +1066,7 @@ button:focus {
 	.mall--content-open .pin--2-10 { top: 30vmin; left: 99vmin; }
 	.mall--content-open .pin--2-11 { top: 30vmin; left: 88vmin; }
 	.mall--content-open .pin--2-12 { top: 30vmin; left: 78.5vmin; }
-	.mall--content-open .pin--2-13 { top: 73vmin; left: 54vmin; }
+	.mall--content-open .pin--2-13 { top: 72vmin; left: 54vmin; }
 
 }
 
@@ -1137,7 +1137,7 @@ button:focus {
 	.pin--2-10 { top: 28vmin; left: 77vmin; }
 	.pin--2-11 { top: 28vmin; left: 69.5vmin; }
 	.pin--2-12 { top: 28vmin; left: 63vmin; }
-	.pin--2-13 { top: 56vmin; left: 47.5vmin; }
+	.pin--2-13 { top: 55vmin; left: 47.5vmin; }
 
 
 	.mall--content-open .pin--2-1 { top: 28vmin; left: 60vmin; }
@@ -1152,7 +1152,7 @@ button:focus {
 	.mall--content-open .pin--2-10 { top: 30vmin; left: 89.5vmin; }
 	.mall--content-open .pin--2-11 { top: 30vmin; left: 80vmin; }
 	.mall--content-open .pin--2-12 { top: 30vmin; left: 71.5vmin; }
-	.mall--content-open .pin--2-13 { top: 66vmin; left: 52.5vmin; }
+	.mall--content-open .pin--2-13 { top: 65vmin; left: 52.5vmin; }
 
 	.content__profile-photo {
 		width: 39.5%;
@@ -1226,7 +1226,7 @@ button:focus {
 	.pin--2-10 { top: 28vmin; left: 77vmin; }
 	.pin--2-11 { top: 28vmin; left: 69.5vmin; }
 	.pin--2-12 { top: 28vmin; left: 63vmin; }
-	.pin--2-13 { top: 56vmin; left: 47.5vmin; }
+	.pin--2-13 { top: 55vmin; left: 47.5vmin; }
 
 
 	.mall--content-open .pin--2-1 { top: 28vmin; left: 60vmin; }
@@ -1241,7 +1241,7 @@ button:focus {
 	.mall--content-open .pin--2-10 { top: 30vmin; left: 89.5vmin; }
 	.mall--content-open .pin--2-11 { top: 30vmin; left: 80vmin; }
 	.mall--content-open .pin--2-12 { top: 30vmin; left: 71.5vmin; }
-	.mall--content-open .pin--2-13 { top: 66vmin; left: 52.5vmin; }
+	.mall--content-open .pin--2-13 { top: 65vmin; left: 52.5vmin; }
 
 
 }
@@ -1283,9 +1283,9 @@ button:focus {
 	border-radius: 50%;
 	z-index: -1;  */
 	border-radius: 3%;
-	-webkit-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.66);
-	-moz-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.66);
-	box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.66);
+	-webkit-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.43);
+	-moz-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.43);
+	box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.43);
 
 	/* -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.66);
 	-moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.66);
@@ -1297,6 +1297,7 @@ button:focus {
 	position: fixed;
 	bottom: 0px;
 	right: 0px;
+	opacity:.8;
 	
 	
 }
@@ -1305,6 +1306,9 @@ button:focus {
 	border: 1px solid white;
 	margin: 1em 0 0 0;
 	opacity: .8;
+	-webkit-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.9);
+	-moz-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.9);
+	box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.9);
 
 
 }
