@@ -559,4 +559,4 @@
 	init();
 
 })(window);
-console.clear()
+
