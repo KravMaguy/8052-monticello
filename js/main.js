@@ -554,6 +554,8 @@
 		classie.remove(spacesListEl, 'spaces-list--open');
 		classie.remove(containerEl, 'container--overflow');
 	}
+	console.clear()
+
 
 	init();
 
