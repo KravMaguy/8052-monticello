@@ -1,5 +1,5 @@
 
-h1.main,p.demos {
+.loaded h1.main,p.demos {
 	-webkit-animation-delay: 18s;
 	-moz-animation-delay: 18s;
 	-ms-animation-delay: 18s;
