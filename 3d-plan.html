@@ -839,7 +839,9 @@
 		<script>
 					$(window).load(function() {
 		// Animate loader off scree
-		$(".se-pre-con").fadeOut("slow");;
+		$(".se-pre-con").fadeOut("slow", function() {
+        $(".container-splash").addClass("loaded");
+      });
 		});
 		</script>
 		
