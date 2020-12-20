@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>8052 Monticello Ave, Skokie, IL 60076</title>
-		<meta name="description" content="An interactive 3D mall map concept with a search and pin indicators for every level. " />
-		<meta name="keywords" content="mall map, 3d, css, javascript, pin, levels, floor map" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="An office warehouse spaces for lease 3d floor plan. " />
+		<meta name="keywords" content="warehouse spaces for lease, 3d floor plan, commerical real estate agency" />
+		<meta name="author" content="marketing design coding" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<style>
 		.no-js { display: none;  }
@@ -60,7 +60,7 @@
 							<h2 class="frame-3">Office Warehouse</h2>
 							<h2 class="frame-4">Lease!</h2>
 							<h2 class="frame-5"><span>8052 Monticello</span> <span>Skokie IL</span> <span>60076</span></h2>
-							<a class="sp-circle-link" href="#">See inside</a>
+							<a class="sp-circle-link">See inside</a>
 						</div>
 					</div>
 				</div>
@@ -391,7 +391,7 @@
 
 
 								
-								<a class="pin pin--2-13" data-category="2" data-space="2.13" href="#" aria-label="Pin for Office Deck">
+								<a class="pin pin--2-13" data-category="2" data-space="" href="#" aria-label="Pin for Office Deck">
 									<span class="pin__icon"> 
 										<svg class="icon icon--pin "><use xlink:href="#icon-pin--cinema"></use></svg>
 										</svg>
@@ -633,8 +633,10 @@
 								<img onerror="profileError(this);" src="img/greystone/small.jpg" width="100%" alt="Profile Picture" />
 							</div>
 							<div class="content__meta">
-								<div class="content__meta-item content__business-hours"><strong>Business Hours:</strong> 6:30AM &mdash; 11:30PM</div>
-								<div class="content__meta-item content__contact-no"><strong>Contact No.:</strong> +(1)-000-000-0000</div>
+								<div class="content__meta-item content__business-hours"><strong>Business Hours:</strong> 9:00AM &mdash; 5:00PM</div>
+								<div class="content__meta-item content__contact-no"><strong>Contact No.:</strong><a href="tel:+18479820340">+(1)-847-982-0340</a></div>
+								<div class="content__meta-item content__contact-no"><strong>Website:</strong><a href="https://leasewarehouses.net/"> Lease Warehouses</a></div>
+
 							</div>
 						</div>
 					</div>
@@ -779,15 +781,19 @@
 							<!-- <div class="content__logo">
 								<img onerror="logoError(this);" src="img/greystone/logo.png" width="65px" alt="Keystone Developing" />
 							</div> -->
-							<h3 class="content__item-title">Office Deck</h3>
+							<h3 class="content__item-title">Office Warehouse Deck</h3>
 						</div>
+
 						<div class="content__item-details">
 							<div class="content__profile-photo">
 								<img onerror="profileError(this);" src="rooftop.jpg" width="100%" alt="Profile Picture" />
 							</div>
 							<div class="content__meta">
-								<div class="content__meta-item content__business-hours"><strong>Business Hours:</strong> 6:30AM &mdash; 11:30PM</div>
-								<div class="content__meta-item content__contact-no"><strong>Contact No.:</strong> +(1)-000-000-0000</div>
+								<div class="content__meta-item"><strong><a class="video-link" href="https://youtu.be/0e00w2jG3R8" data-modal="button"> 3d Video #1</a>	</strong>					
+								</div>
+								<div class="content__meta-item"><strong><a class="video-link" href="https://youtu.be/tYxBD0lCAVA" data-modal="button"> 3d Video #2</a>	</strong>					
+								</div>
+								<div class="content__meta-item"><strong>About:</strong> 3-D videos of a charity fundraiser on the deck of 8052 monticello - office warehouses for lease.</div>
 							</div>
 						</div>
 					</div>
@@ -854,11 +860,142 @@
 		<script src="js/list.min.js"></script>
 		<script src="js/main.js"></script>
 		<script>
-				$(".sp-circle-link").click(function(){
+				$(".container-splash").click(function(){
 			  $(".container-splash").fadeOut("slow");
 			  $(".container").fadeIn(700);
 			});
-			setTimeout(function(){ console.clear(); }, 3000);
+			// setTimeout(function(){ console.clear(); }, 3000);
+			;
+(function() {
+
+  var Modal = function() {
+
+    var prefix = 'Modal-';
+
+    this.Class = {
+      stopOverflow: prefix + 'cancel-overflow',
+      overlay: prefix + 'overlay',
+      box: prefix + 'box',
+      close: prefix + 'close'
+    };
+
+    this.Selector = {
+      overlay: '.' + this.Class.overlay,
+      box: '.' + this.Class.box,
+      button: '[data-modal=button]'
+    };
+
+    this.Markup = {
+      close: '<div class=" ' + this.Class.close + ' ">Close X</div>',
+      overlay: '<div class=" ' + this.Class.overlay + ' "></div>',
+      box: '<div class=" ' + this.Class.box + ' "></div>'
+    }
+
+    this.youtubeID = false;
+
+  };
+
+  Modal.prototype = {
+
+    toggleOverflow: function() {
+      $('body').toggleClass(this.Class.stopOverflow);
+    },
+
+    videoContainer: function() {
+      return '<div class="video-container"><iframe id="player" src="https://www.youtube.com/embed/' + this.youtubeID + '?autoplay=1&rel=0" frameborder="0"></iframe></div>';
+    },
+
+    addOverlay: function() {
+
+      var self = this;
+
+      $(this.Markup.overlay).appendTo('body').fadeIn('slow', function() {
+        self.toggleOverflow();
+      });
+
+      $(this.Selector.overlay).on('click touchstart', function() {
+        self.closeModal();
+      })
+
+    },
+
+    addModalBox: function() {
+      $(this.Markup.box).appendTo(this.Selector.overlay);
+    },
+
+    buildModal: function(youtubeID) {
+
+      this.addOverlay();
+      this.addModalBox();
+
+      $(this.Markup.close).appendTo(this.Selector.overlay);
+      $(this.videoContainer(youtubeID)).appendTo(this.Selector.box);
+
+    },
+
+    closeModal: function() {
+
+      this.toggleOverflow();
+
+      $(this.Selector.overlay).fadeOut().detach();
+      $(this.Selector.box).empty();
+
+    },
+
+    getYoutubeID: function() {
+      return this.youtubeID;
+    },
+
+    setYoutubeID: function(href) {
+
+      var id = '';
+
+      if (href.indexOf('youtube.com') > -1) {
+        // full Youtube link
+        id = href.split('v=')[1];
+      } else if (href.indexOf('youtu.be') > -1) {
+        // shortened Youtube link
+        id = href.split('.be/')[1];
+      } else {
+        // in case it's not a Youtube link, send them on their merry way
+        document.location = href;
+      }
+
+      // If there's an ampersand, remove it and return what's left, otherwise return the ID
+      this.youtubeID = (id.indexOf('&') != -1) ? id.substring(0, amp) : id;
+
+    },
+
+    startup: function(href) {
+
+      this.setYoutubeID(href);
+
+      if (this.youtubeID) {
+        this.buildModal();
+      }
+
+    }
+
+  };
+
+  $(document).ready(function() {
+
+    var modal = new Modal();
+
+    $(modal.Selector.button).on('click touchstart', function(e) {
+      e.preventDefault();
+      modal.startup(this.href);
+    });
+
+  });
+
+})(this);
+		
+
+
+
+
+
 
 		</script>
 	</body>
