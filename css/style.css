@@ -169,6 +169,9 @@ button:focus {
 .levels {
 	-webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
 	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-20vmin);
+
+	-webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
+	transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
 }
 
 .level {
@@ -233,6 +236,14 @@ button:focus {
 .level--2 {
 	-webkit-transform: translateZ(10vmin);
 	transform: translateZ(10vmin);
+}
+
+
+	
+/* abe added*/
+.level--1 {
+	-webkit-transform: translateZ(-10vmin);
+	transform: translateZ(-10vmin);
 }
 
 /* Selection transitions */
@@ -1389,4 +1400,8 @@ html, body {
   .container-splash{
 	cursor: pointer;
 
+  }
+
+  .about-div{
+	  margin-top:5px;
   }
